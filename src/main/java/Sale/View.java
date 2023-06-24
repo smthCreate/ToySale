@@ -9,20 +9,13 @@ public class View {
             while (true) {
                 if (menuPoint==1) {
                     Integer[] arg = Prompt.promptIntAr("Введите второй аргумент: ");
-                    calculator.multi(arg);
-                    loggable.saveLog("Inputed "+Prompt.massView(arg));
                     continue;
                 }
-                if (cmd.equals("+")) {
+                if (menuPoint==2) {
                     Integer[] arg = Prompt.promptIntAr("Введите второй аргумент: ");
-                    calculator.sum(arg);
-                    loggable.saveLog("Inputed "+Prompt.massView(arg));
                     continue;
                 }
-                if (cmd.equals("=")) {
-                    Integer[] result = calculator.getResult();
-                    System.out.printf("Результат %s\n", Prompt.massView(result));
-                    loggable.saveLog("Resulted "+Prompt.massView(result));
+                if (menuPoint==3) {
                     break;
                 }
             }
