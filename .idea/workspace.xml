@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="814fe06f-4717-412f-b579-7f21ab20648f" name="Changes" comment="after interface">
+    <list default="true" id="814fe06f-4717-412f-b579-7f21ab20648f" name="Changes" comment="3 methods(newCard,changeWeight,runbaraban)">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sale/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sale/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sale/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sale/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sale/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sale/RunBaraban.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sale/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sale/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sale/ViewFactory.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687638091492</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3 methods(newCard,changeWeight,runbaraban)">
+      <created>1687692877687</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687692877687</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +152,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="before interface" />
     <MESSAGE value="after interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="after interface" />
+    <MESSAGE value="3 methods(newCard,changeWeight,runbaraban)" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 methods(newCard,changeWeight,runbaraban)" />
   </component>
 </project>

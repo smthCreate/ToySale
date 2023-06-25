@@ -4,31 +4,25 @@ import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 @Data
-public class Methods{
-    public Toy newCard(int id, String name,
-                               int quantity, int weight){
-        Toy newtoy = new Toy(id,name,quantity,weight);
-        return newtoy;
-    }
-    public Toy changeWeight(Toy toy, int newWeight){
-        toy.setWeight(newWeight);
-        return toy;
-    }
+public class RunBaraban {
+    Random random = new Random();
     public Toy runBaraban(List<Toy> toys){
         List<Integer> toyIndex = new ArrayList<>();
         while (toyIndex.size()==0) {
             int probability = (int) (Math.random() * 10);
             for (int i = 0; i < toys.size(); i++) {
-                if (toys.get(i).getWeight() >= probability) {
+                if (toys.get(i).getWeight() >= probability && toys.get(i).getQuantity()>0) {
                     toyIndex.add(i);
+                    toys.get(i).setQuantity(toys.get(i).getQuantity());
                 }
             }
         }
         List<Integer> sortedToyIndex = toyIndex.stream().sorted().collect(Collectors.toList());
-        return toys.get(toyIndex.get(-1));
+        return toys.get(toyIndex.get(random.nextInt(0, toyIndex.size())));
 
     }
 }
